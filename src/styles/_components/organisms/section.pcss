@@ -1,0 +1,28 @@
+@layer components {
+    .o-section {
+        @apply
+        flex
+        justify-center
+        my-auto;
+
+        &:not(:first-child) {
+            @apply
+            py-8;
+        }
+    }
+
+    .o-section--dummy {
+        @apply
+        h-60
+        text-2xl;
+    }
+
+    .o-section--dummy-gradient {
+        @apply
+        h-60
+        text-white
+        text-2xl
+        
+        u-gradient-to-r;
+    }
+}

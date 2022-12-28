@@ -58,6 +58,17 @@ module.exports = {
                 1000: 'rgb(var(--color-gray-1000) / <alpha-value>)',
             },
             black: 'rgb(var(--color-black) / <alpha-value>)',
+
+            gradient: {
+                100: 'rgb(var(--color-gradient-100) / <alpha-value>)',
+                200: 'rgb(var(--color-gradient-200) / <alpha-value>)',
+                300: 'rgb(var(--color-gradient-300) / <alpha-value>)',
+                400: 'rgb(var(--color-gradient-400) / <alpha-value>)',
+                500: 'rgb(var(--color-gradient-500) / <alpha-value>)',
+                600: 'rgb(var(--color-gradient-600) / <alpha-value>)',
+                700: 'rgb(var(--color-gradient-700) / <alpha-value>)',
+                800: 'rgb(var(--color-gradient-800) / <alpha-value>)',
+            }
         },
         borderColor: (theme) => ({
             ...theme('colors'),
