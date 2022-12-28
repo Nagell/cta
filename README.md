@@ -1,6 +1,7 @@
 # CTA project
 
 ## Tech-Stack
+
 - [Vue 3](https://v3.vuejs.org/)
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
