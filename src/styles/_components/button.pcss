@@ -2,9 +2,24 @@
     .a-btn {
         @apply
         px-4
-        py-2
+        py-1.5
         cursor-pointer
         rounded-full;
+    }
+
+    .a-btn--s-sm {
+        @apply
+        text-xs;
+    }
+
+    .a-btn--s-base {
+        @apply
+        text-sm;
+    }
+
+    .a-btn--s-lg {
+        @apply
+        text-base;
     }
 
     .a-btn--c-primary {
@@ -16,5 +31,12 @@
     .a-btn--c-primary:hover {
         @apply
         bg-sec;
+    }
+
+    .a-btn--c-white-outline {
+        @apply
+        border
+        border-white
+        text-white;
     }
 }
