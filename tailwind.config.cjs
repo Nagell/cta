@@ -69,12 +69,6 @@ module.exports = {
                 'ui-sans-serif',
                 'sans-serif',
             ],
-            'sans-secondary': [
-                '"Roboto Slab"',
-                'Roboto',
-                'ui-sans-serif',
-                'sans-serif'
-            ],
             serif: [
                 '"Roboto Serif"',
                 'ui-serif',
