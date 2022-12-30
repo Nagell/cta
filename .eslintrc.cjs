@@ -92,6 +92,12 @@ module.exports = {
                 'indent': 'off',
                 'max-len': 'off'
             }
+        },
+        {
+            'files': ['*.ts', '*.vue'],
+            'rules': {
+                'no-undef': 'off'
+            }
         }
     ],
     /* PROJECT SPECIFIC */

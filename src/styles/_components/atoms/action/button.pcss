@@ -4,7 +4,9 @@
         px-4
         py-1.5
         cursor-pointer
-        rounded-full;
+        rounded-full
+        inline
+        transition-colors;
     }
 
     .a-btn--s-sm {
@@ -24,19 +26,26 @@
 
     .a-btn--c-primary {
         @apply
-        bg-prim
+        bg-prim-light
         text-white;
     }
 
     .a-btn--c-primary:hover {
         @apply
-        bg-sec;
+        bg-prim;
     }
 
-    .a-btn--c-white-outline {
+    .a-btn--c-white-transparent {
         @apply
-        border
-        border-white
-        text-white;
+        bg-white
+        bg-opacity-30
+        text-white
+        backdrop-blur-sm;
+    }
+
+    .a-btn--c-white-transparent:hover {
+        @apply
+        bg-white
+        text-sec;
     }
 }

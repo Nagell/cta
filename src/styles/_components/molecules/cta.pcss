@@ -1,6 +1,94 @@
 @layer components {
-    .cta {
+    .m-cta {
         @apply
-        my-auto;
+        flex
+        flex-col
+        justify-center
+        items-center
+        gap-8
+        
+        max-w-[1440px]
+        
+        aspect-[7/3]
+        bg-no-repeat
+        bg-cover
+        bg-center
+
+        mt-[-15%]
+        mb-0
+        pt-[25%]
+        pb-[15%]
+        mx-[-20%]
+        px-[25%]
+        
+        text-white
+        @container-normal;
+
+        background-image: url(./src/assets/images/cta-background.svg);
+    }
+
+    @screen md {
+        .m-cta {
+            @apply
+            grid
+            grid-cols-2
+            gap-12
+        }
+    }
+
+    @screen lg {
+        .m-cta {
+            @apply
+            bg-contain
+
+            my-0
+            py-[10%]
+            mx-auto
+            px-28
+        }
+    }
+
+    .m-cta__header {
+        @apply
+        flex
+        flex-col
+        gap-4
+        justify-center
+        items-center
+        text-center;
+    }
+
+    @screen md {
+        .m-cta__header {
+            @apply
+            items-start
+            text-left;
+        }
+    }
+
+    .m-cta__action {
+        @apply
+        w-[80%]
+        md:w-auto
+    }
+
+    .m-cta__content {
+        @apply
+        flex
+        flex-col
+        flex-wrap
+        justify-center
+        items-center
+        gap-4;
+    }
+
+    .m-cta__tags {
+        @apply
+        flex
+        flex-wrap
+        justify-center
+        items-center
+        gap-x-2
+        gap-y-2;
     }
 }

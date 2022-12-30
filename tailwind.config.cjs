@@ -20,6 +20,7 @@ module.exports = {
             current: 'currentColor',
 
             prim: {
+                light: 'rgb(var(--color-prim-light) / <alpha-value>)',
                 DEFAULT: 'rgb(var(--color-prim-default) / <alpha-value>)',
             },
             sec: {
