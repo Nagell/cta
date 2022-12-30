@@ -11,30 +11,138 @@
 				fill:none;
 			}
 			.paths{
-				clip-path:url(#clipPath);
+				clip-path:url(#clip-path);
 			}
 			.background{
-				fill:url(#bgGradient);
+				fill:url(#bg-gradient);
 			}
-			.paths > path {
-				
-				
-				mix-blend-mode:multiply;
+			.paths > path {				
 				mix-blend-mode:screen;
-				<!-- mix-blend-mode:soft-light; -->
-
-
-
-
-				filter:url(#opacity);
-				fill:url(#pathsGradient);
+				filter:url(#paths-opacity-filter);
+				fill:url(#paths-gradient);
 			}
-        </style>
-		<clipPath id="clipPath">
+			#spark-1 {
+				animation: spark_1_move 4000ms linear infinite normal forwards
+			}
+			@keyframes spark_1_move {
+				0% { offset-distance: 0% }
+				27.5% { offset-distance: 0% }
+				45% { offset-distance: 50% }
+				62.5% { offset-distance: 100% }
+				100% { offset-distance: 100% }
+			}
+			#spark-1-ellipse {
+				animation: spark_1_ellipse_opacity 4000ms linear infinite normal forwards
+			}
+			@keyframes spark_1_ellipse_opacity {
+				0% { opacity: 0 }
+				27.5% { opacity: 0 }
+				37.5% { opacity: 0.3 }
+				47.5% { opacity: 0.3 }
+				50% { opacity: 0.1 }
+				52.5% { opacity: 0.3 }
+				55% { opacity: 0.1 }
+				62.5% { opacity: 0 }
+				100% { opacity: 0 }
+			}
+			#spark-2 {
+				animation: spark_2_move 4000ms linear infinite normal forwards
+			}
+			@keyframes spark_2_move {
+				0% { offset-distance: 0% }
+				22.5% { offset-distance: 46.913142% }
+				45% { offset-distance: 100% }
+				100% { offset-distance: 100% }
+			}
+			#spark-2-ellipse {
+				animation: spark_2_ellipse_opacity 4000ms linear infinite normal forwards
+			}
+			@keyframes spark_2_ellipse_opacity {
+				0% { opacity: 0 }
+				15% { opacity: 0.3 }
+				30% { opacity: 0.3 }
+				32.5% { opacity: 0.1 }
+				35% { opacity: 0.3 }
+				37.5% { opacity: 0.1 }
+				45% { opacity: 0 }
+				100% { opacity: 0 }
+			}
+			#spark-3 {
+				animation: spark_3_move 4000ms linear infinite normal forwards
+			}
+			@keyframes spark_3_move {
+				0% { offset-distance: 0% }
+				12.5% { offset-distance: 0% }
+				35% { offset-distance: 50.120894% }
+				57.5% { offset-distance: 100% }
+				100% { offset-distance: 100% }
+			}
+			#spark-3-ellipse {
+				animation: spark_3_ellipse_opacity 4000ms linear infinite normal forwards
+			}
+			@keyframes spark_3_ellipse_opacity {
+				0% { opacity: 0 }
+				12.5% { opacity: 0 }
+				27.5% { opacity: 0.3 }
+				42.5% { opacity: 0.3 }
+				45% { opacity: 0.1 }
+				47.5% { opacity: 0.3 }
+				50% { opacity: 0.1 }
+				57.5% { opacity: 0 }
+				100% { opacity: 0 }
+			}
+			#spark-4 {
+				animation: spark_4_move 4000ms linear infinite normal forwards
+			}
+			@keyframes spark_4_move {
+				0% { offset-distance: 0% }
+				55% { offset-distance: 0% }
+				77.5% { offset-distance: 47.700053% }
+				100% { offset-distance: 100% }
+			}
+			#spark-4-ellipse {
+				animation: spark_4_ellipse_opacity 4000ms linear infinite normal forwards
+			}
+			@keyframes spark_4_ellipse_opacity {
+				0% { opacity: 0 }
+				55% { opacity: 0 }
+				70% { opacity: 0.3 }
+				85% { opacity: 0.3 }
+				87.5% { opacity: 0.1 }
+				90% { opacity: 0.3 }
+				92.5% { opacity: 0.1 }
+				100% { opacity: 0 }
+			}
+			#spark-5 {
+				animation: spark_5_move 4000ms linear infinite normal forwards
+			}
+			@keyframes spark_5_move {
+				0% { offset-distance: 0% }
+				45% { offset-distance: 0% }
+				67.5% { offset-distance: 49.144102% }
+				90% { offset-distance: 100% }
+				100% { offset-distance: 100% }
+			}
+			#spark-5-ellipse {
+				animation: spark_5_ellipse_opacity 4000ms linear infinite normal forwards
+			}
+			@keyframes spark_5_ellipse_opacity {
+				0% { opacity: 0 }
+				45% { opacity: 0 }
+				60% { opacity: 0.3 }
+				75% { opacity: 0.3 }
+				77.5% { opacity: 0.1 }
+				80% { opacity: 0.3 }
+				82.5% { opacity: 0.1 }
+				90% { opacity: 0 }
+				100% { opacity: 0 }
+			}
+		</style>
+		<clipPath id="clip-path">
 			<path class="mask" d="m6.52,51.62C34.88-19.02,1234.97-5.87,1270.88,24.52c35.91,30.39,11.28,316.85-36.44,403.31-47.71,86.46-1110.91,165.92-1148.04,94.46C49.28,450.83-21.84,122.26,6.52,51.62Z"/>
 		</clipPath>
 		
-		<linearGradient id="bgGradient" x1="34.79" y1="1525.8" x2="1257.03" y2="1525.8" gradientTransform="translate(0 1800.8) scale(1 -1)" gradientUnits="userSpaceOnUse">
+		<linearGradient id="bg-gradient" x1="34.79" y1="1525.8" x2="1257.03" y2="1525.8" gradientTransform="translate(0 1800.8) scale(1 -1)" gradientUnits="userSpaceOnUse">
 			<stop offset=".01" stop-color="#010c36"/>
 			<stop offset=".16" stop-color="#11255e"/>
 			<stop offset=".27" stop-color="#17296c"/>
@@ -45,16 +153,38 @@
 			<stop offset="1" stop-color="#98f3ea"/>
 		</linearGradient>
 
-		<linearGradient id="pathsGradient" x1=".37" y1="240.27" x2="1300.6" y2="240.27" gradientUnits="userSpaceOnUse">
+		<linearGradient id="paths-gradient" x1=".37" y1="240.27" x2="1300.6" y2="240.27" gradientUnits="userSpaceOnUse">
 			<stop offset="0" stop-color="#000"/>
 			<stop offset=".49" stop-color="#17296c"/>
 			<stop offset=".7" stop-color="#16c3a644"/>
 			<stop offset="1" stop-color="#5BEFF3CC"/>
 		</linearGradient>
 
-        <filter id="opacity" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="1288" height="550" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+		<radialGradient id="spark-gradient-1" cx="0" cy="0" r="0.5" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0.5 0.5)">
+			<stop offset="9%" stop-color="#fff" />
+			<stop offset="20%" stop-color="#ffffffd9" />
+			<stop offset="89%" stop-color="#096d8a00" />
+		</radialGradient>
+
+		<radialGradient id="spark-gradient-2" cx="0" cy="0" r="0.5" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0.5 0.5)">
+			<stop offset="9%" stop-color="#fff" />
+			<stop offset="20%" stop-color="#ffffffd9" />
+			<stop offset="89%" stop-color="#0d173d00" />
+		</radialGradient>
+
+		<radialGradient id="spark-gradient-3" cx="0" cy="0" r="0.5" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0.5 0.5)">
+			<stop offset="9%" stop-color="#fff" />
+			<stop offset="20%" stop-color="#ffffffd9" />
+			<stop offset="89%" stop-color="#05a8a900" />
+		</radialGradient>
+
+        <filter id="paths-opacity-filter" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="1288" height="550" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 			<feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.75 0" />
         </filter>
+
+		<filter id="spark-blur-filter" x="-150%" width="400%" y="-150%" height="400%">
+         <feGaussianBlur stdDeviation="0,0" result="result" />
+      	</filter>
 	</defs>
 	<g class="image">
 		<path class="background" d="m6.52,51.62C34.88-19.02,1234.97-5.87,1270.88,24.52c35.91,30.39,11.28,316.85-36.44,403.31-47.71,86.46-1110.91,165.92-1148.04,94.46C49.28,450.83-21.84,122.26,6.52,51.62Z"/>
@@ -177,4 +307,21 @@
 			<path d="m813.22,349.26c-84.6,50.27-182.32,93.12-281.36,100.74-47.41,3.61-95.25-4.88-140.89-17.19-30.77-8.13-62.03-17.46-93.29-23.59-57.74-11.02-119.54-12.76-175.54,7.25C58.94,439.13,28.56,481.92.37,540.26v-4.28l4.43-9.08,7.86-14.81c8.48-14.79,19.96-32.78,31.09-45.68,42.18-49.23,109.65-67.21,172.45-67.03,137.26.17,215.91,71.83,362.88,43.01,54.8-10.38,108.25-30.18,158.48-54.16,47.71-22.75,93.58-50.44,136.26-81.61,72.37-52.28,137.87-114.45,212.6-163.54,67.13-43.73,139.83-79.19,214.16-108.86v1.59c-79.89,32.06-157.97,70.63-229,119.5-88.07,61.83-165.73,138.52-258.38,193.95h0Z"/>
 		</g>
 	</g>
+	<g transform="translate(1.8)">
+		<g id="spark-1" style="offset-path:path('M495.464603,314.742008C507.114008,315.477758,644.549915,326.68494,697.861359,327.818271C773.399648,328.791821,862.463715,317.934818,899.256546,307.804818');offset-rotate:0deg">
+			<ellipse id="spark-1-ellipse" rx="5.933902" ry="5.933902" transform="scale(1.436578,1.436578) translate(0,0)" opacity="0" filter="url(#spark-blur-filter)" fill="url(#spark-gradient-1)" stroke-width="0" />
+		</g>
+		<g id="spark-2" style="offset-path:path('M347.027303,385.671562C358.662777,389.016172,465.919141,419.029896,518.244134,418.894818C539.504331,418.894818,606.662328,422.719297,710.894989,380.794818');offset-rotate:0deg">
+			<ellipse id="spark-2-ellipse" rx="5.933902" ry="5.933902" transform="scale(1.436578,1.436578) translate(0,0)" opacity="0" filter="url(#spark-blur-filter)" fill="url(#spark-gradient-1)" stroke-width="0" />
+		</g>
+		<g id="spark-3" style="offset-path:path('M186.672798,355.427738C243.084329,350.17456,363.085534,349.043694,421.393898,350.16605C453.131793,350.16605,539.59274,351.522403,654.660584,363.257786');offset-rotate:0deg">
+			<ellipse id="spark-3-ellipse" rx="5.933902" ry="5.933902" transform="scale(1.436578,1.436578) translate(0,0)" opacity="0" filter="url(#spark-blur-filter)" fill="url(#spark-gradient-2)" stroke-width="0" />
+		</g>
+		<g id="spark-4" style="offset-path:path('M742.44979,403.17598C810.265508,389.065504,848.473003,380.62615,908.725223,362.804386C975.514448,336.15615,1026.146349,318.549818,1079.917598,286.471548');offset-rotate:0deg">
+			<ellipse id="spark-4-ellipse" rx="5.933902" ry="5.933902" transform="scale(1.436578,1.436578) translate(0,0)" opacity="0" filter="url(#spark-blur-filter)" fill="url(#spark-gradient-3)" stroke-width="0" />
+		</g>
+		<g id="spark-5" style="offset-path:path('M808.281883,331.129818C865.870196,304.332981,924.086812,248.024818,988.501311,212.931444C1053.002356,171.564818,1128.315605,144.476585,1191.222264,120.288016');offset-rotate:0deg">
+			<ellipse id="spark-5-ellipse" rx="5.933902" ry="5.933902" transform="scale(1.436578,1.436578) translate(0,0)" opacity="0" filter="url(#spark-blur-filter)" fill="url(#spark-gradient-3)" stroke-width="0" />
+		</g>
+   </g>
 </svg>

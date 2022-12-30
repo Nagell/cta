@@ -25,6 +25,9 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 
 ## TODO
 
-- add slider styling for buttons
-- add image animation
-- add storybook?
+- deploy to firebase
+
+## Next Steps
+
+- if more icons will be added, a conversion to an icon font should be considered
+- with more components an implementation of [Storybook](https://storybook.js.org/docs/vue/get-started/introduction) would improve the review process

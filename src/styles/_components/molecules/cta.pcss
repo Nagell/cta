@@ -17,46 +17,41 @@
 
         mt-[-15%]
         mb-0
+        mx-[-20%]
         pt-[25%]
         pb-[15%]
-        mx-[-20%]
         px-[5%]
         
         text-white
         @container-normal;
 
         background-image: url(./src/assets/images/cta-background.svg);
-    }
 
-    @screen md {
-        .m-cta {
+        @screen md {
             @apply
             grid
             grid-cols-2
             gap-12;
         }
-    }
 
-    @screen lg {
-        .m-cta {
+        @screen lg {
             @apply
             bg-contain
 
             my-0
-            py-[10%]
             mx-auto
+            py-[10%]
             px-28;
             
             grid-template-columns: 1fr 40%;
         }
-    }
-
-    @screen xl {
-        .m-cta {
+        @screen xl {
             grid-template-columns: 1fr 35%;
         }
     }
 
+
+    /* HEADER */
     .m-cta__header {
         @apply
         flex
@@ -65,10 +60,8 @@
         justify-center
         items-center
         text-center;
-    }
 
-    @screen md {
-        .m-cta__header {
+        @screen md {
             @apply
             items-start
             text-left;
@@ -81,18 +74,12 @@
         md:w-auto;
     }
 
-    .m-cta__content {
-        @apply
-        flex
-        flex-col
-        flex-wrap
-        justify-center
-        items-center
-        w-full;
-    }
 
-    @screen md {
-        .m-cta__content {
+    /* CONTENT */
+    .m-cta__content {
+        @apply w-full;
+
+        @screen md {
             @apply
             flex
             flex-wrap
@@ -102,49 +89,29 @@
         }
     }
 
-    .m-cta__tags-container {
-        @apply
-        flex
-        w-full
-        overflow-x-auto
-
-        u-mask-to-transparent-v;
-
-        --mask-width: 10%;
-        mask-image: var(--mask-image-content);
-
-        
-        -ms-overflow-style: none!important;
-        scrollbar-width: thin!important;
-        &::-webkit-scrollbar {
-            display: none!important;
-        }
-    }
-
-    @screen md {
-        .m-cta__tags-container {
-            mask-image: none;
-        }
-    }
-
     .m-cta__tags {
         @apply
-        flex-auto
-        flex-shrink-0
         flex
         gap-2
+        
         px-[10%]
-        pb-4;
-    }
+        pb-4
+        
+        w-full
+        overflow-x-auto
+        
+        u-no-scroll-bar
+        u-mask-image-to-transparent-v;
 
-    @screen md {
-        .m-cta__tags {
+        @screen md {
             @apply
             flex-shrink
             justify-center
             flex-wrap
             pb-0
-            px-0;
+            px-0
+            
+            u-mask-image-none;
         }
     }
 
@@ -155,8 +122,6 @@
     .m-cta__info {
         @apply
         hidden
-        md:flex
+        md:block
     }
-
-
 }

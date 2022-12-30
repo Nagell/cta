@@ -65,20 +65,18 @@
       </template>
     </header>
     <div class="m-cta__content">
-      <div class="m-cta__tags-container">
-        <div class="m-cta__tags">
-          <template v-if="skillLinks?.length">
-            <AButton
-              v-for="(tag, key) in skillLinks"
-              :id="tag.id"
-              :key="key"
-              color="white-transparent"
-              size="base"
-              :label="tag.label"
-              additional-classes="m-cta__tag"
-            />
-          </template>
-        </div>
+      <div class="m-cta__tags">
+        <template v-if="skillLinks?.length">
+          <AButton
+            v-for="(tag, key) in skillLinks"
+            :id="tag.id"
+            :key="key"
+            color="white-transparent"
+            size="base"
+            :label="tag.label"
+            additional-classes="m-cta__tag"
+          />
+        </template>
       </div>
       <p class="m-cta__info">
         <i class="icon icon--search-green text-white" />
