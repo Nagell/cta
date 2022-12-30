@@ -25,7 +25,6 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 
 ## TODO
 
-- add search icon
 - add slider styling for buttons
 - add image animation
 - add storybook?

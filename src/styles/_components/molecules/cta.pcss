@@ -7,6 +7,7 @@
         items-center
         gap-8
         
+        w-full
         max-w-[1440px]
         
         aspect-[7/3]
@@ -19,7 +20,7 @@
         pt-[25%]
         pb-[15%]
         mx-[-20%]
-        px-[25%]
+        px-[5%]
         
         text-white
         @container-normal;
@@ -32,7 +33,7 @@
             @apply
             grid
             grid-cols-2
-            gap-12
+            gap-12;
         }
     }
 
@@ -44,7 +45,15 @@
             my-0
             py-[10%]
             mx-auto
-            px-28
+            px-28;
+            
+            grid-template-columns: 1fr 40%;
+        }
+    }
+
+    @screen xl {
+        .m-cta {
+            grid-template-columns: 1fr 35%;
         }
     }
 
@@ -69,7 +78,7 @@
     .m-cta__action {
         @apply
         w-[80%]
-        md:w-auto
+        md:w-auto;
     }
 
     .m-cta__content {
@@ -79,16 +88,75 @@
         flex-wrap
         justify-center
         items-center
-        gap-4;
+        w-full;
+    }
+
+    @screen md {
+        .m-cta__content {
+            @apply
+            flex
+            flex-wrap
+            justify-center
+            items-center
+            gap-6;
+        }
+    }
+
+    .m-cta__tags-container {
+        @apply
+        flex
+        w-full
+        overflow-x-auto
+
+        u-mask-to-transparent-v;
+
+        --mask-width: 10%;
+        mask-image: var(--mask-image-content);
+
+        
+        -ms-overflow-style: none!important;
+        scrollbar-width: thin!important;
+        &::-webkit-scrollbar {
+            display: none!important;
+        }
+    }
+
+    @screen md {
+        .m-cta__tags-container {
+            mask-image: none;
+        }
     }
 
     .m-cta__tags {
         @apply
+        flex-auto
+        flex-shrink-0
         flex
-        flex-wrap
-        justify-center
-        items-center
-        gap-x-2
-        gap-y-2;
+        gap-2
+        px-[10%]
+        pb-4;
     }
+
+    @screen md {
+        .m-cta__tags {
+            @apply
+            flex-shrink
+            justify-center
+            flex-wrap
+            pb-0
+            px-0;
+        }
+    }
+
+    .m-cta__tag {
+        @apply flex-shrink-0;
+    }
+
+    .m-cta__info {
+        @apply
+        hidden
+        md:flex
+    }
+
+
 }

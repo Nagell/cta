@@ -12,4 +12,14 @@
             theme(colors.gradient.100) 97%
         );
     }
+
+    .u-mask-to-transparent-v {
+        --mask-image-content: linear-gradient(
+            to right,
+            transparent 0%,
+            black var(--mask-width),
+            black calc(100% - var(--mask-width)),
+            transparent
+        );
+    }
 }
