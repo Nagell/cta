@@ -1,10 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./src/**/*.{html,js,vue}'],
+    content: ['./**/*.html',
+        './src/**/*.{js,jsx,ts,tsx,html,vue}',],
     darkMode: 'class',
-    safelist: [
-        { pattern: /(a|m|o|u)-\S*/ },
-    ],
 
     theme: {
         screens: {
