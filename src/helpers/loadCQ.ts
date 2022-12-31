@@ -4,6 +4,6 @@ export default function loadCQ() {
     setTimeout(() => {
         script.src = 'https://cdn.jsdelivr.net/npm/container-query-polyfill@1/dist/container-query-polyfill.modern.js'
     },
-    100)
+    500)
     document.getElementsByTagName('head')[0].appendChild(script)
 }
