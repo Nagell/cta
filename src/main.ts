@@ -1,6 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+
+/* Container Query Helper */
+import loadCQ from './helpers/loadCQ'
+
 import './styles/index.pcss'
-import 'container-query-polyfill'
 
 createApp(App).mount('#app')
+loadCQ()
