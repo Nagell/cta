@@ -18,7 +18,7 @@
 			}
 			.paths > path {				
 				mix-blend-mode:screen;
-				filter:url(#paths-opacity-filter);
+				opacity: 0.75;
 				fill:url(#paths-gradient);
 			}
 			#spark-1 {
@@ -177,10 +177,6 @@
 			<stop offset="20%" stop-color="#ffffffd9" />
 			<stop offset="89%" stop-color="#05a8a900" />
 		</radialGradient>
-
-        <filter id="paths-opacity-filter" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="1288" height="550" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-			<feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.75 0" />
-        </filter>
 
 		<filter id="spark-blur-filter" x="-150%" width="400%" y="-150%" height="400%">
          <feGaussianBlur stdDeviation="0,0" result="result" />
