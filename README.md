@@ -22,6 +22,12 @@ For this one open the [demo](https://cta-animated.web.app/) and use mobile view 
   - [container-query-polyfill](https://github.com/GoogleChromeLabs/container-query-polyfill) - for those browsers which do not yet support them
 - [PostCSS](https://postcss.org/)
 
+### Comment on container queries
+
+Since this is a very new feature, I decided to use polyfill for it. Although it works, it is far from perfect.  
+The locally hosted version works fine, but the deployed one has some issues on Firefox.  
+In the meantime (at the time of this writing), it looks like the Firefox team is also working on this feature and will release it next month.
+
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
