@@ -26,7 +26,7 @@ For this one open the [demo](https://cta-animated.web.app/) and use mobile view 
 
 Since this is a very new feature, I decided to use polyfill for it. Although it works, it is far from perfect.  
 The locally hosted version works fine, but the deployed one has some issues on Firefox.  
-In the meantime (at the time of this writing), it looks like the Firefox team is also working on this feature and will release it next month.
+In the meantime (at the time of writing), it looks like the Firefox team is also working on this feature and will release it next month.
 
 ## Recommended IDE Setup
 
