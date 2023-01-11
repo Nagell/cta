@@ -10,29 +10,14 @@
     additionalClasses?: string
   }
 
-  const props = defineProps({
-    label: {
-      type: String as PropType<ButtonProps['label']>,
-      required: true,
-    },
-    color: {
-      type: String as PropType<ButtonProps['color']>,
-      default: 'primary',
-    },
-    size: {
-      type: String as PropType<ButtonProps['size']>,
-      default: 'md',
-    },
-    id: {
-      type: String as PropType<ButtonProps['id']>,
-      default: '',
-    },
-    additionalClasses: {
-      type: String as PropType<ButtonProps['additionalClasses']>,
-      default: '',
-    },
+  const props = withDefaults(defineProps<ButtonProps>(), {
+    id: '',
+    label: 'Button',
+    color: 'primary',
+    size: 'base',
+    additionalClasses: '',
   })
-
+  
   const computedId = computed(() => {
     return props.id || props.label.replaceAll(' ', '-').toLowerCase()
   })
