@@ -5,7 +5,7 @@
 
   export interface HeadingProps {
     level?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
-    renderAs?: HeadingProps['level']
+    renderAs?: HeadingProps['level'] | ''
     color: 'primary' | 'secondary' | 'white' | 'black'
     label: string
     additionalClasses: string
