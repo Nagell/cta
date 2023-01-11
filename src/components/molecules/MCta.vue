@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import type { PropType } from 'vue'
   import AButton from '../atoms/action/AButton.vue'
   import AHeading from '../atoms/typo/AHeading.vue'
 
@@ -12,31 +11,13 @@
     skillLinks?: ActionButton[]
   }
 
-  const props = defineProps({
-    dictPlatform: {
-      type: String as PropType<CtaProps['dictPlatform']>,
-      default: '',
-    },
-    dictHeader: {
-      type: String as PropType<CtaProps['dictHeader']>,
-      default: '',
-    },
-    dictIndustry: {
-      type: String as PropType<CtaProps['dictIndustry']>,
-      default: '',
-    },
-    dictSkillsLabel: {
-      type: String as PropType<CtaProps['dictSkillsLabel']>,
-      default: '',
-    },
-    actionLink: {
-      type: Object as PropType<CtaProps['actionLink']>,
-      default: () => ({}),
-    },
-    skillLinks: {
-      type: Array as PropType<CtaProps['skillLinks']>,
-      default: () => ([])
-    }
+  const props = withDefaults(defineProps<CtaProps>(), {
+    dictPlatform: '',
+    dictHeader: '',
+    dictIndustry: '',
+    dictSkillsLabel: '',
+    actionLink: undefined,
+    skillLinks: undefined,
   })
 </script>
 

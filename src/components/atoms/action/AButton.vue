@@ -4,14 +4,13 @@
   export interface ButtonProps {
     id?: string
     label: string
-    color: 'primary' | 'white-transparent'
-    size: 'sm' | 'base' | 'lg'
+    color?: 'primary' | 'white-transparent'
+    size?: 'sm' | 'base' | 'lg'
     additionalClasses?: string
   }
 
   const props = withDefaults(defineProps<ButtonProps>(), {
     id: '',
-    label: 'Button',
     color: 'primary',
     size: 'base',
     additionalClasses: '',
